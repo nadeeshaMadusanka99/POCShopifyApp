@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "9d6a2381c0a0c89e57d4b29b8193fa42"
+name = "demo-app"
+handle = "demo-app-1154"
+application_url = "https://bookmarks-wind-turtle-suspension.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-0a99c137.myshopify.com"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://bookmarks-wind-turtle-suspension.trycloudflare.com/auth/callback",
+  "https://bookmarks-wind-turtle-suspension.trycloudflare.com/auth/shopify/callback",
+  "https://bookmarks-wind-turtle-suspension.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
